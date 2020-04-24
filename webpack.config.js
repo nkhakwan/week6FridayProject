@@ -19,7 +19,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new Dotenv(),
     new HtmlWebpackPlugin({
-      title: 'week6WednesdayApiStuff',
+      title: 'week6ProjectCurrencyExchange',
       template: './src/index.html',
       inject: 'body'
     })
