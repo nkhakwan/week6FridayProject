@@ -1,0 +1,36 @@
+  <!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <script type="text/javascript" src="weather-interface.js"></script> -->
+    <title>Currency Exchange</title>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+      <h1>Convert Dollar into 5 other currencies with Today's rate</h1>
+      <label for="amount">Enter your Dollar amount:</label>
+      <input id="amount" type="text">
+      <label for="currency">Please Select your desired currency:</label>
+        <select id="currency" name="currency">
+          <option value="1">PKR-Pakistani Rupee</option>
+          <option value="2">AED-Dubai Dirham</option>
+          <option value="3">SAR-Saudi Riyaal</option>
+          <option value="4">CAD-Canadian Dollars</option>
+          <option value="5">EUR-Euro</option>
+        </select>
+      <button class="btn-success" id="exchangeRate">Get Current Exchange Rate</button>
+      <div class="convertedAmount"></div>
+      <div class="wellsee"></div>
+      <div class="seethisonetoo"></div>
+    </div>
+    </div>
+  </body>
+</html>
+
+
+  
