@@ -38,7 +38,6 @@ _Ashynchrony in JS_
 
 ### Specs 
 #### Inputs on the web Page
-| :-------------  | :-----------------------------------------------------| :----------------------------------------|
 | **Entering Amount in Dollars**  | User Input:"enters the amount that he wants converted from Dollar" |
 | **Choosing Currency** | User Input: "Chooses between 5 currencies -AED,PKR,SAR,CAD and EUR" |
 | **Button** | User Input: "clicks the button" |
