@@ -12,7 +12,7 @@ _This website takes, **dollar amount a person wants converted into different cur
 
 * Clone this repository.
 * Navigate to root and run "npm install"
-* Run "npm run start" to buil and bring up an interactive web page
+* Run "npm run start" to build and bring up an interactive web page
 * Later "npm lint" can be run to ensure there are no errors.
 
 
