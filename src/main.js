@@ -1,12 +1,11 @@
 import { CurrencyExchange } from './api.js';
 
 $(document).ready(function() {
-
   $('#exchangeRate').click(function() {
-    console.log(`logger entered click function`)
+    console.log(`logger entered click function`);
     let currencyType  =  parseInt($("#currency").val());
     const dollarAmount = parseInt($('#amount').val());
-    console.log(`does logger has currency ${currencyType} and amount ${dollarAmount}?`)
+    console.log(`does logger has currency ${currencyType} and amount ${dollarAmount}?`);
     $('#amount').val("");
     (async () => {
       let currencyExchange = new CurrencyExchange();
