@@ -10,8 +10,11 @@ $(document).ready(function() {
     (async () => {
       let currencyExchange = new CurrencyExchange();
       const response = await currencyExchange.getCurrency(dollarAmount);
-      console.log(response);
-      getElements(response);
+      const exchangeGot = currencyExchange.conversion(dollarAmount,currencyType,response.conversion_rates);
+      console.log(response.conversion_rates);
+      console.log(`logger's final data is here ${exchangeGot}`);
+
+      getElements(exchangeGot);
     })();
 
     

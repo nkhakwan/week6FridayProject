@@ -2,9 +2,7 @@ export class CurrencyExchange {
   async getCurrency(currency) {
     try {
       console.log("logger has entered backend function call");
-      //let response = await fetch(`https://cors-anywhere.herokuapp.com/bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
-      //let response = await fetch(`https://bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
-
+      
       let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
       console.log("logger after the fetch");
       let jsonifiedResponse;
@@ -21,6 +19,11 @@ export class CurrencyExchange {
       console.log (`logger in the catch area`);
       return false;
     }
+  }
+
+  conversion(dollarAmount, currency, conversion_rates){
+    let basket = [0,conversion_rates.PKR, conversion_rates.AED, conversion_rates.SAR, conversion_rates.CAD, conversion_rates.EUR];
+      return basket[currency]*dollarAmount;
   }
 
 }
