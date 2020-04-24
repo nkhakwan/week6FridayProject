@@ -18,13 +18,13 @@ $(document).ready(function() {
     })();
 
     
-    function getElements(response) {
-      if (response) {
-        $('.convertedAmount').text("we'll put converted amount here");
-        $('.wellsee').text(`we'll see what do we need to put in here`);
+    function getElements(exchangeGot) {
+      if (exchangeGot) {
+        $('.convertedAmount').text(`${exchangeGot} is the amount in your converted currency of choice`);
+        $('.wellsee').text(`set aside few bucks for your iceCream from ${exchangeGot}`);
       } else {
         $('.convertedAmount').text(`There was an error handling your request.`);
-        $('.seethisonetoo').text(`Please check your inputs and try again!`);
+        $('.wellsee').text(`Please check your inputs and try again!`);
       }
     }
 
