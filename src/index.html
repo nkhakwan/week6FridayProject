@@ -11,11 +11,19 @@
 
   <body>
     <div class="container">
+      <div class="row">
+        <div class="col-md-12">
       <div class="jumbotron">
       <h1>Convert Dollar into 5 other currencies with Today's rate</h1>
+    </div>
+  </div>
+      <div class="col-md-6">
+        <div class="jumbotron">
       <label for="amount">Enter your Dollar amount:</label>
       <input id="amount" type="text">
-      <label for="currency">Please Select your desired currency:</label>
+      <br>
+      <br>
+      <label for="currency">Your desired currency:$&$</label>
         <select id="currency" name="currency">
           <option value="1">PKR-Pakistani Rupee</option>
           <option value="2">AED-Dubai Dirham</option>
@@ -23,10 +31,17 @@
           <option value="4">CAD-Canadian Dollars</option>
           <option value="5">EUR-Euro</option>
         </select>
-      <button class="btn-success" id="exchangeRate">Get Current Exchange Rate</button>
+      </div>
+  </div>
+  <div class="col-md-6">
+    <div class="jumbotron">
+      <!-- <button class="btn-success" id="exchangeRate">Get Current Exchange Rate</button> -->
+      <button id="exchangeRate">Get Current Exchange Rate</button>
       <div class="convertedAmount"></div>
       <div class="wellsee"></div>
       <div class="seethisonetoo"></div>
+    </div>
+  </div>
     </div>
     </div>
   </body>
