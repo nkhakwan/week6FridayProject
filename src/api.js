@@ -2,8 +2,10 @@ export class CurrencyExchange {
   async getCurrency(currency) {
     try {
       console.log("logger has entered backend function call");
-      let response = await fetch(`https://cors-anywhere.herokuapp.com/bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
+      //let response = await fetch(`https://cors-anywhere.herokuapp.com/bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
       //let response = await fetch(`https://bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
+
+      let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
       console.log("logger after the fetch");
       let jsonifiedResponse;
       console.log(`logger ok and status ${response.ok} and ${response.status}`);
